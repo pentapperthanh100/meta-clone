@@ -1,0 +1,27 @@
+.brand {
+  &-search {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    input {
+      width: calc(100% - 34px);
+      border: 1px solid #eee;
+      border-radius: 3px 0 0 3px;
+      height: 30px;
+      font-size: 16px;
+      outline: none;
+      vertical-align: middle;
+      text-indent: 5px;
+    }
+    .btn-search-branch {
+      width: 30px;
+      height: 30px;
+      background-color: $secondary-color;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.exp {
+  &-content {
+    display: flex;
+    align-items: center;
+  }
+  .click-here {
+    background: $secondary-color;
+    color: #fff;
+    width: 70px;
+    text-align: center;
+    padding: 3px 5px;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+}
