@@ -1,0 +1,23 @@
+.show-cat-new {
+  &__item {
+    text-align: center;
+    padding: 10px;
+    .item__content {
+      img {
+        margin: 0 auto 10px;
+      }
+    }
+    &:hover {
+      span {
+        color: $red-color;
+        font-weight: 400;
+      }
+    }
+    &.is-active {
+      span {
+        color: $red-color;
+        font-weight: bold;
+      }
+    }
+  }
+}

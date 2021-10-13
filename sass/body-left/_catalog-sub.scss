@@ -1,0 +1,27 @@
+.center-body-left {
+}
+//category-sub
+.catalog-sub {
+  margin-top: 0 !important;
+  padding: 10px;
+  &__list {
+    text-align: left;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    padding: 7px 0;
+    &:hover {
+      color: $red-color;
+    }
+  }
+  &__item:hover {
+    color: $red-color;
+    font-weight: 400;
+  }
+  &__item.is-active {
+    color: $red-color;
+    font-weight: bold;
+  }
+}

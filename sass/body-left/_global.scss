@@ -1,0 +1,89 @@
+.center-boder-left {
+}
+.body-box-left {
+  margin-top: 15px;
+  text-align: center;
+  background-color: #fff;
+}
+.filter-group {
+  margin-top: 0;
+  padding-bottom: 15px;
+}
+
+.body-box-inner {
+  padding: 10px;
+  background-color: #fff;
+}
+.view-more-filter-left {
+  padding: 10px 0;
+  a {
+    text-decoration: none;
+    i {
+      font-size: 13px;
+    }
+  }
+}
+.list-filter {
+  position: relative;
+  .filter-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0 10px;
+    padding: 7px 0;
+    a {
+      position: absolute;
+      top: 1px;
+      left: 10px;
+      height: 12px;
+      width: 12px;
+      background-color: #fff;
+      border: 1px solid #2196f3;
+      border-radius: 3px;
+    }
+    &:hover {
+      color: $red-color;
+      font-weight: 400;
+    }
+    &.is-active {
+      color: $red-color;
+      font-weight: bold;
+    }
+    .input-selected {
+      // position: absolute;
+      // opacity: 0;
+      // cursor: pointer;
+      appearance: none;
+      --webkit-appearance: none;
+      height: 15px;
+      width: 15px;
+      border: 1px solid #2196f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      &:after {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        content: "\f00c";
+        font-size: 15px;
+        color: #2196f3;
+        display: none;
+      }
+      &:checked {
+        background-color: #2196f3;
+        color: #fff;
+        &:after {
+          display: block;
+          color: #fff;
+        }
+      }
+    }
+    .filter-check {
+      cursor: pointer;
+      .count-filter-item {
+        color: #999;
+      }
+    }
+  }
+}

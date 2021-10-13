@@ -1,0 +1,143 @@
+.product {
+  &-container {
+  }
+  &-item {
+    padding: 10px;
+    &:hover {
+      border: 1px solid #ddd;
+      .product-item-bottom{
+        opacity: 1;
+      }
+    }
+    &-top {
+      width: 100%;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .wrapper-gift-and-installment {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width:100%
+      }
+      .gift-and-installment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .installment {
+          border-radius: 0;
+          font-size: 14px;
+        }
+        .gift {
+          display: flex;
+          align-items: center;
+          // position: relative;
+          .wrapper-img-gift {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border: 2px solid $red-color;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 100vh;
+            z-index: 200;
+          }
+          img {
+            width: 15px;
+            height: 15px;
+          }
+
+          .gift-name {
+            position: relative;
+
+            padding: 2px 7px;
+            left: -10px;
+            color: #fff;
+            font-size: 14px;
+            border-radius: 0;
+            background-color: $red-color;
+            span {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+    &-content {
+      &__name {
+        display: block;
+        margin: 10px 0;
+        color: #333;
+        &:hover {
+          color: $red-color;
+        }
+      }
+      &__brand {
+        margin: 10px 0;
+        font-weight: bold;
+        color: $blue-text-color;
+      }
+      &__rating {
+        display: flex;
+        align-items: center;
+        gap: 0 5px;
+        margin: 10px 0;
+        font-size: 12px;
+        .rating-score {
+          display: inline-flex;
+          .rated {
+            color: $secondary-color;
+          }
+        }
+      }
+      &__price {
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .price-new {
+          color: $red-color;
+          font-weight: bold;
+          font-size: 18px;
+        }
+        .price-old {
+          font-size: 14px;
+          font-weight: 400;
+          text-decoration: line-through;
+        }
+      }
+    }
+    &-bottom {
+      margin-top: 20px;
+      text-align: center;
+      opacity: 0;
+      a {
+        display: block;
+        padding: 10px 20px;
+      }
+      .buy-now {
+        width: 100%;
+      }
+    }
+  }
+  //button sale right;
+  &-percent-sale {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.stick {
+  padding: 3px 10px;
+  background-color: $secondary-color;
+  color: #fff;
+  border-radius: 15px;
+  z-index: 20;
+}
